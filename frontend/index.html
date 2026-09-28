@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Income Tax Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Income Tax Application Form</h1>
+        <p>Individual Taxpayer Registration & Income Details</p>
+    </div>
+
+    <form id="incomeTaxForm">
+
+        <!-- Personal Details -->
+        <div class="section">
+
+            <h2>1. Personal Details</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName"
+                           placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label>PAN Number</label>
+                    <input type="text" id="pan"
+                           placeholder="ABCDE1234F">
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Father's / Mother's Name</label>
+                    <input type="text" id="parentName"
+                           placeholder="Enter parent name">
+                </div>
+
+                <div class="form-group">
+                    <label>Marital Status</label>
+                    <select id="maritalStatus">
+                        <option value="">Select Status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                        <option>Widowed</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Contact Details -->
+        <div class="section">
+
+            <h2>2. Contact Details</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" id="mobile"
+                           placeholder="Enter mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter email address">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Residential Address</label>
+                    <textarea id="address"
+                              placeholder="Enter complete address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" id="city"
+                           placeholder="Enter city">
+                </div>
+
+                <div class="form-group">
+                    <label>State</label>
+                    <select id="state">
+                        <option value="">Select State</option>
+                        <option>Maharashtra</option>
+                        <option>Telangana</option>
+                        <option>Karnataka</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Delhi</option>
+                        <option>Gujarat</option>
+                        <option>Tamil Nadu</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>PIN Code</label>
+                    <input type="text" id="pincode"
+                           placeholder="Enter PIN code">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Income Details -->
+        <div class="section">
+
+            <h2>3. Income Details</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Income Source</label>
+                    <select id="incomeSource">
+                        <option value="">Select Income Source</option>
+                        <option>Salary</option>
+                        <option>Business</option>
+                        <option>Professional</option>
+                        <option>House Property</option>
+                        <option>Capital Gains</option>
+                        <option>Other Sources</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Financial Year</label>
+                    <select id="financialYear">
+                        <option value="">Select Financial Year</option>
+                        <option>2025-26</option>
+                        <option>2026-27</option>
+                        <option>2027-28</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Annual Income</label>
+                    <input type="number" id="annualIncome"
+                           placeholder="Enter annual income">
+                </div>
+
+                <div class="form-group">
+                    <label>TDS Amount</label>
+                    <input type="number" id="tds"
+                           placeholder="Enter TDS amount">
+                </div>
+
+                <div class="form-group">
+                    <label>Other Income</label>
+                    <input type="number" id="otherIncome"
+                           placeholder="Enter other income">
+                </div>
+
+                <div class="form-group">
+                    <label>Tax Regime</label>
+                    <select id="taxRegime">
+                        <option value="">Select Tax Regime</option>
+                        <option>Old Tax Regime</option>
+                        <option>New Tax Regime</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bank Details -->
+        <div class="section">
+
+            <h2>4. Bank Details</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Account Holder Name</label>
+                    <input type="text" id="accountHolder"
+                           placeholder="Enter account holder name">
+                </div>
+
+                <div class="form-group">
+                    <label>Bank Name</label>
+                    <input type="text" id="bankName"
+                           placeholder="Enter bank name">
+                </div>
+
+                <div class="form-group">
+                    <label>Account Number</label>
+                    <input type="password" id="accountNumber"
+                           placeholder="Enter account number">
+                </div>
+
+                <div class="form-group">
+                    <label>IFSC Code</label>
+                    <input type="text" id="ifsc"
+                           placeholder="Enter IFSC code">
+                </div>
+
+                <div class="form-group">
+                    <label>Account Type</label>
+                    <select id="accountType">
+                        <option value="">Select Account Type</option>
+                        <option>Savings Account</option>
+                        <option>Current Account</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Documents -->
+        <div class="section">
+
+            <h2>5. Documents</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>PAN Card</label>
+                    <input type="file" id="panCard">
+                </div>
+
+                <div class="form-group">
+                    <label>Identity Proof</label>
+                    <input type="file" id="identityProof">
+                </div>
+
+                <div class="form-group">
+                    <label>Address Proof</label>
+                    <input type="file" id="addressProof">
+                </div>
+
+                <div class="form-group">
+                    <label>Income Proof</label>
+                    <input type="file" id="incomeProof">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Declaration -->
+        <div class="section">
+
+            <h2>6. Declaration</h2>
+
+            <div class="declaration">
+
+                <p>
+                    I hereby declare that the information provided
+                    in this application form is true and correct
+                    to the best of my knowledge and belief.
+                </p>
+
+                <div class="checkbox">
+
+                    <input type="checkbox" id="declaration">
+
+                    <label for="declaration">
+                        I agree to the above declaration.
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button type="reset" class="reset-btn">
+                Reset
+            </button>
+
+            <button type="submit" class="submit-btn">
+                Submit Application
+            </button>
+
+        </div>
+
+    </form>
+
+    <div class="footer">
+        © 2026 Income Tax Application
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
